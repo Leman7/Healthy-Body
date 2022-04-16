@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Inspiration&family=Josefin+Sans:wght@300&family=Ramaraja&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Josefin Sans;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: beige;
+    padding: 0.5rem 1rem;
+    z-index: 999;
+  }
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+}
+
+.burger_menu i {
+    position: relative;
+}
+
+.header__navMenu {
+    list-style: none;
+    padding: 1rem;
+}
+
+.header__navMenu ul {
+    list-style: none;
+    display: none;
+    justify-content: space-between;
+    width: 100vh;
+}
+
+.header__navMenu ul li {
+    padding: 1rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+
+.header__navMenu ul li:hover {
+    background: white;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+
+    .header__navMenu ul {
+        display: flex;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+}
+
+/* BODY */
+
+main {
+    background-image: linear-gradient(white, beige);
+}
+
+header div .logo {
+    width: 70px;
+    box-shadow:  0.5px 0.5px 5px rgba(0, 0, 0, 1);
+    border: .5px solid black;
+    display: flex;
+    border-radius: 50%;
+    position: relative;
+    left: -1350px;
+}
+
+
+/* INDEX */
+
+.index__title {
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -50px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+    margin: 0 auto;    
+} 
+
+.container1 {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    margin-top: 10rem;
+}
+
+.container2 {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container2 img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+
+}
+
+.boxadv {
+    display: flex;
+    justify-content: center;
+}
+
+main article p a{
+    text-decoration: none;
+    color: #888E8E;
+}
+
+main article p a:hover{
+    text-shadow: 1px 1px 1px gray;
+}
+
+.item {
+    padding: 20px;
+}
+
+.item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in;
+}
+
+.index__search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+.index__search input {
+    position: relative;
+    top: 70px;
+    left: 0px;
+    padding: 1rem;
+    width: 30rem;
+    border: 2px solid grey;
+}
+
+.index__search button {
+    position: relative;
+    left: 5px;
+    top: 70px;
+    border: none;
+    border: 2px solid grey;
+}
+
+.index__search button:hover {
+    border: 1px solid grey;
+    box-shadow: 0 0 3px black;
+}
+
+.index__search i {
+    font-size: 32px;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    top: 5px;
+    left: -4px;
+}
+
+/* CATALOGO */
+
+#catalogoEdit {
+    position: relative;
+    top: -10px;
+}
+
+.catalogo__mainContainer .catalogo__sectionContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+
+    .catalogo__mainContainer .catalogo__sectionContainer {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 6rem 1rem;
+        padding: 10px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10rem;
+    }
+}
+
+.catalogo__mainContainer .catalogo__sectionContainer img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    align-self: center;
+}
+
+.catalogo__mainContainer .catalogo__sectionContainer .img {
+    padding: 4rem 0 5rem;
+}
+
+.catalogoProducts {
+    width: 202px;
+    height: 346px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+}
+
+.catalogoProducts:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in;
+}
+
+.bolso {
+    position: relative;
+    left: -20px;
+}
+
+/* NOSOTROS */
+
+.containerUs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 1345px) {
+    .containerUs {
+        flex-direction: column;
+    }
+
+    .boxLeft img {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+.titleUs {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.boxRight {
+    height: 550px;
+    width: 800px;
+}
+
+main div section p {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    position: relative;
+    bottom: -50px;
+    margin-bottom: 40px;
+}
+
+.linkCatalogo {
+    text-decoration: none;
+    color: #888E8E;
+}
+
+.linkCatalogo:hover {
+    text-shadow: 0.1px 0.1px 1px gray;
+}
+
+.boxLeft {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+} 
+
+.boxLeft img {
+    max-width: 800px;
+    max-height: 800px;
+    margin: 100px;
+    border: 0.1px double black;
+}
+
+/* CONTACTO */
+
+main .contact__subContainer {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contact__subContainer input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+main .contact__subContainer textarea {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    resize: none;
+    border-radius: 1rem;
+}
+
+main .contact__subContainer h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 2rem;
+}
+
+main .contact__subContainer p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .contact__subContainer .contact__buttonContainer button {
+    padding: 1rem;
+    border: none;
+}
+
+main .contact__subContainer .contact__buttonContainer button:hover {
+    box-shadow: 0 0 1px black;
+    border: 1px double black;
+}
+
+/* FEEDBACK */
+
+.containerFeedTop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 0 20px;
+}
+
+.titleFeed {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.legendFeed {
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+
+.pFeed {
+    position: relative;
+    top: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.containerFormFeed {
+    box-shadow: 0px 0px 4px black;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    margin: 100px;
+}
+
+.inputFeed {
+    width: 200px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.finalTitle {
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+.labelFeed {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 20px;
+    position: relative;
+    top: 15px;
+    margin: 0 auto;
+    resize: none;
+}
+
+.feedButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.feedForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#textbox {
+    resize: none;
+    height: 10rem;
+}
+
+#buttonForm {
+    width: 80px;
+    height: 50px;
+    border: 0;
+    border-radius: 25%;
+    box-shadow: 0 0 2px black;
+}
+
+#buttonForm:hover {
+    box-shadow: none;
+} 
+
+/* FOOTER */
+
+footer {
+    background-color: beige;
+    padding: 1rem;
+    height: 100%;
+}
+
+.containerfot {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.logofot {
+    width: 50px;
+    border-radius: 50%;
+}
+
+i {
+    font-size: 40px;
+    margin-left: 9px;
+    margin-top: 6px;
+    color: black;
+}
+
+.i1 {
+    margin-left: -3.5px;
+} 
+
+.i2 {
+    margin-left: -.9px;
+}
+
+h6 {
+    text-align: center;
+}
+
