@@ -84,10 +84,6 @@ nav {
     font-size: 25px;
 }
 
-@media screen and (max-width: 465) {
-    
-}
-
 .banner-text h1 {
     font-size: 90px;
     margin-bottom: 25px;
@@ -190,8 +186,6 @@ nav {
 /* BODY */
 
 body {
-    /* background-image: linear-gradient(black, #9b5c25); */
-    /* background-color: black; */
     background-image: url(../assets/background.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -622,6 +616,16 @@ main article p a:hover{
     flex-direction: column;
     padding: 50px;
     margin: 100px;
+}
+
+@media screen and (max-width: 430px) {
+
+    .containerFormFeed {
+        padding: 0 130px 0 130px;
+        position: relative;
+        left: -30px;
+    }
+    
 }
 
 .inputFeed {
