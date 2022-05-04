@@ -80,28 +80,6 @@ main {
         }
     }
 
-    .container2 {
-        padding: 3rem;
-        display: flex;
-        justify-content: space-evenly;
-
-        img {
-            width: 300px;
-            height: 300px;
-            object-fit: contain;
-            border: 2px solid #DE6C08;
-            border-radius: 10px;
-            padding: 20px;
-            transition: all .5s;
-            box-shadow: 1px 1px 20px 1px black;
-
-            &:hover {
-                transform: scale(1.2);
-                transition: all .5s;
-            }
-        }
-    }
-
     .boxadv {
         color: white;
         display: flex;

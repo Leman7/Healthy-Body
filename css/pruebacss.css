@@ -12,81 +12,31 @@ body {
   background-position: center;
   background-size: cover; }
 
-.otro_index {
-  width: 50px;
-  height: 10%; }
-  .otro_index nav {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .otro_index nav .logo {
-      width: 150px;
-      height: 150px;
-      margin-left: 15px; }
-    .otro_index nav .bar-btn {
-      margin-right: 1rem;
-      cursor: pointer; }
-      .otro_index nav .bar-btn i {
-        font-size: 25px;
-        color: white;
-        margin-right: 25px; }
-    .otro_index nav .navMenu {
-      position: absolute;
-      width: 100%;
-      height: 0;
-      top: 100px;
-      background-color: rgba(0, 0, 0, 0.9);
-      text-align: center;
-      transition: all .5s;
-      z-index: 10; }
-      .otro_index nav .navMenu li {
-        display: none;
-        line-height: 100px;
-        margin: 50px 0;
-        transition: all 5s; }
-        .otro_index nav .navMenu li a {
-          color: #fff;
-          font-size: 20px;
-          text-transform: uppercase;
-          font-weight: 600;
-          text-decoration: none; }
-          .otro_index nav .navMenu li a .active, .otro_index nav .navMenu li a:hover {
-            color: #DE6C08;
-            transition: .3s; }
-  .otro_index #check:checked ~ .navMenu {
-    height: 100vh; }
-  .otro_index #check:checked ~ .navMenu li {
-    display: block; }
-  .otro_index #check {
-    display: none; }
-
-.header_index {
+.header_index, .otro_index {
   width: 100%;
   height: 100vh;
   background-image: url(../assets/header.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
-  .header_index nav {
+  .header_index nav, .otro_index nav {
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .header_index nav .logo {
+    .header_index nav .logo, .otro_index nav .logo {
       width: 150px;
       height: 150px;
       margin-left: 15px; }
-    .header_index nav .bar-btn {
+    .header_index nav .bar-btn, .otro_index nav .bar-btn {
       margin-right: 1rem;
       cursor: pointer; }
-      .header_index nav .bar-btn i {
+      .header_index nav .bar-btn i, .otro_index nav .bar-btn i {
         font-size: 25px;
         color: white;
         margin-right: 25px; }
-    .header_index nav .navMenu {
+    .header_index nav .navMenu, .otro_index nav .navMenu {
       position: absolute;
       width: 100%;
       height: 0;
@@ -95,64 +45,45 @@ body {
       text-align: center;
       transition: all .5s;
       z-index: 10; }
-      .header_index nav .navMenu li {
+      .header_index nav .navMenu li, .otro_index nav .navMenu li {
         display: none;
         line-height: 100px;
         margin: 50px 0;
         transition: all 5s; }
-        .header_index nav .navMenu li a {
+        .header_index nav .navMenu li a, .otro_index nav .navMenu li a {
           color: #fff;
           font-size: 20px;
           text-transform: uppercase;
           font-weight: 600;
           text-decoration: none; }
-          .header_index nav .navMenu li a .active, .header_index nav .navMenu li a:hover {
+          .header_index nav .navMenu li a .active, .otro_index nav .navMenu li a .active, .header_index nav .navMenu li a:hover, .otro_index nav .navMenu li a:hover {
             color: #DE6C08;
             transition: .3s; }
-  .header_index .banner-text {
+  .header_index .banner-text, .otro_index .banner-text {
     padding: 0 30px;
     margin-top: 300px;
     text-align: center;
     color: #fff;
     font-size: 25px; }
-    .header_index .banner-text h2 {
+    .header_index .banner-text h2, .otro_index .banner-text h2 {
       font-size: 90px; }
-    .header_index .banner-text span {
+    .header_index .banner-text span, .otro_index .banner-text span {
       color: #DE6C08; }
-    .header_index .banner-text h1 {
+    .header_index .banner-text h1, .otro_index .banner-text h1 {
       font-weight: 100; }
-  .header_index .header_button1 {
-    margin-right: 40px;
-    padding: 10px 20px;
-    background-color: #DE6C08;
-    color: #fff;
-    border-radius: 10%; }
-    .header_index .header_button1:hover {
-      background-color: #fff;
-      color: #DE6C08;
-      transition: 0.5s; }
-  .header_index .header_button2 {
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 10%;
-    color: #DE6C08; }
-    .header_index .header_button2:hover {
-      background-color: #DE6C08;
-      color: #fff;
-      transition: 0.5s; }
-  .header_index #check:checked ~ .navMenu {
+  .header_index #check:checked ~ .navMenu, .otro_index #check:checked ~ .navMenu {
     height: 100vh; }
-  .header_index #check:checked ~ .navMenu li {
+  .header_index #check:checked ~ .navMenu li, .otro_index #check:checked ~ .navMenu li {
     display: block; }
-  .header_index #check {
+  .header_index #check, .otro_index #check {
     display: none; }
 
 @media screen and (min-width: 768px) {
-  .header_index nav {
+  .header_index nav, .otro_index nav {
     height: 100px; }
-    .header_index nav .bar-btn {
+    .header_index nav .bar-btn, .otro_index nav .bar-btn {
       display: none; }
-    .header_index nav .navMenu {
+    .header_index nav .navMenu, .otro_index nav .navMenu {
       position: sticky;
       display: flex;
       height: 100px;
@@ -161,23 +92,23 @@ body {
       transition: none;
       text-align: center;
       margin-right: 50px; }
-      .header_index nav .navMenu li {
+      .header_index nav .navMenu li, .otro_index nav .navMenu li {
         display: inline-block;
         line-height: 100px;
         margin: 0 20px;
         transition: none; }
-        .header_index nav .navMenu li a {
+        .header_index nav .navMenu li a, .otro_index nav .navMenu li a {
           font-size: 20px;
           letter-spacing: 2px; }
-  .header_index .banner-text {
+  .header_index .banner-text, .otro_index .banner-text {
     padding: 0 30px;
     margin-top: 300px;
     text-align: center;
     color: #fff;
     font-size: 25px; }
-    .header_index .banner-text h1 {
+    .header_index .banner-text h1, .otro_index .banner-text h1 {
       font-size: 30px; }
-    .header_index .banner-text h2 {
+    .header_index .banner-text h2, .otro_index .banner-text h2 {
       font-size: 70px;
       margin-bottom: 30px; }
   .boton-index {
@@ -208,179 +139,6 @@ body {
           font-size: 20px;
           letter-spacing: 2px; }
 
-/* .header_index {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../assets/header.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    nav {
-        height: 100px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .logo {
-            width: 150px;
-            height: 150px;
-            margin-left: 15px;
-        }
-
-        #check {
-            display: none;
-
-            &:checked ~ .navMenu {
-                height: 100vh;
-
-                li {
-                    display: block;
-                }
-            }
-        }
-
-        .bar-btn {
-            margin-right: 1rem;
-            cursor: pointer;
-
-            i {
-                font-size: 25px;
-                color: white;
-                margin-right: 25px;
-            }
-        }
-
-        .navMenu {
-            position: absolute;
-            display: none;
-            width: 100%;
-            height: 0;
-            top: 100px;
-            background-color: rgba(0, 0, 0, 0.90);
-            text-align: center;
-            transition: all .5s;
-            z-index: 10;
-
-            li {
-                display: none;
-                line-height: 100px;
-                margin: 50px 0;
-                transition: all 5s;
-
-                a {
-                    color: #fff;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    text-decoration: none;
-
-                    &:hover {
-                        color: #DE6C08;
-                        transition: .3s;
-                    }
-                }
-            }
-        }
-    }
-
-    .banner-text {
-        padding: 0 30px;
-        margin-top: 300px;
-        text-align: center;
-        color: #fff;
-        font-size: 25px;
-
-        h2 {
-            font-size: 90px;
-        }
-
-        span {
-            color: #DE6C08;
-        }
-
-        h1 {
-            font-weight: 100;
-        }
-
-        .header_button1 {
-            margin-right: 40px;
-            padding: 10px 20px;
-            background-color: #DE6C08;
-            color: #fff;
-            border-radius: 10%;
-
-            &:hover {
-                background-color: #fff;
-                color: #DE6C08;
-                transition: 0.5s;
-            }
-        }
-
-        .header_button2 {
-            background-color: #fff;
-            padding: 10px 20px;
-            border-radius: 10%;
-            color: #DE6C08;
-
-            &:hover {
-                background-color: #DE6C08;
-                color: #fff;
-                transition: 0.5s;
-            }
-        }
-        
-    }
-}
-
-@media screen and (min-width: 768px) {
-    nav {
-        height: 100px;
-
-        .bar-btn {
-            display: none;
-        }
-
-        .navMenu {
-            position: sticky;
-            display: flex;
-            height: 100px;
-            top: -100px;
-            background: none;
-            transition: none;
-            text-align: center;
-            margin-right: 50px;
-
-            li {
-                display: inline-block;
-                line-height: 100px;
-                margin: 0 20px;
-                transition: none;
-
-                a {
-                    font-size: 20px;
-                    letter-spacing: 2px;
-
-                    .boton-index {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-
-    .banner-text {
-        h1 {
-            font-size: 30px;
-        }
-
-        h2 {
-            font-size: 70px;
-            margin-bottom: 30px;
-        }
-    }
-} */
 main .index__title {
   color: white;
   letter-spacing: 5px;
@@ -443,23 +201,6 @@ main .container1 {
   main .container1 .video {
     box-shadow: 1px 1px 20px 20px black;
     margin-top: 10rem; }
-
-main .container2 {
-  padding: 3rem;
-  display: flex;
-  justify-content: space-evenly; }
-  main .container2 img {
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
-    border: 2px solid #DE6C08;
-    border-radius: 10px;
-    padding: 20px;
-    transition: all .5s;
-    box-shadow: 1px 1px 20px 1px black; }
-    main .container2 img:hover {
-      transform: scale(1.2);
-      transition: all .5s; }
 
 main .boxadv {
   color: white;
@@ -783,3 +524,44 @@ footer {
     color: #fff;
     font-size: 15px;
     letter-spacing: 1px; }
+
+.header_button1 {
+  margin-right: 40px;
+  padding: 10px 20px;
+  background-color: #DE6C08;
+  color: #fff;
+  border-radius: 10%; }
+  .header_button1:hover {
+    background-color: #fff;
+    color: #DE6C08;
+    transition: 0.5s; }
+
+.header_button2 {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10%;
+  color: #DE6C08; }
+  .header_button2:hover {
+    background-color: #DE6C08;
+    color: #fff;
+    transition: 0.5s; }
+
+.otro_index {
+  background-image: none; }
+
+.container2 {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-evenly; }
+  .container2 img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border: 2px solid #DE6C08;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 20px 1px black; }
+    .container2 img:hover {
+      transform: scale(1.2);
+      transition: all 0.5s; }
