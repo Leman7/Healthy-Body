@@ -111,30 +111,10 @@ body {
   .boton-index {
     display: none; } }
 
-.otro_index {
-  width: 50px;
-  height: 10%; }
-  .otro_index nav {
-    height: 100px; }
-    .otro_index nav .bar-btn {
-      display: none; }
-    .otro_index nav .navMenu {
-      position: sticky;
-      display: flex;
-      height: 100px;
-      top: -100px;
-      background: none;
-      transition: none;
-      text-align: center;
-      margin-right: 50px; }
-      .otro_index nav .navMenu li {
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 20px;
-        transition: none; }
-        .otro_index nav .navMenu li a {
-          font-size: 20px;
-          letter-spacing: 2px; }
+@media screen and (max-height: 780px) {
+  .header_index .banner-text, .img-background .banner-text {
+    position: relative;
+    top: -200px; } }
 
 main .index__title {
   color: white;
